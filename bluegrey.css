@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Oswald;
 }
 
 .container {
@@ -16,9 +16,15 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: flex-end;
+    flex-flow: column;
+    align-items: center;
     font-weight: bold;
+    font-stretch: ultra-expanded
     
+}
+
+h1 {
+    font-weight: bold;
 }
 
 .cards {
@@ -35,6 +41,16 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     padding: 10px;
+}
+
+.line {
+    width: 9%;
+    height: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .card-img {
@@ -57,6 +73,12 @@ body {
     display: flex;
     justify-self: center;
     width: 35%;
+    font-weight: bold;
+
+}
+
+h2 {
+    padding: 10px 0 10px 0;
 }
 
 button {
@@ -72,3 +94,6 @@ button {
     width: 50%;
 }
 
+#idris {
+    width: 30%;
+}
