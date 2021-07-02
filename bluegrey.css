@@ -3,7 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Oswald;
 }
 
 .container {
@@ -16,9 +16,19 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: flex-end;
+    flex-flow: column;
+    align-items: center;
     font-weight: bold;
+    font-stretch: ultra-expanded
     
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+
 }
 
 .cards {
@@ -37,6 +47,16 @@ body {
     padding: 10px;
 }
 
+.line {
+    width: 12%;
+    height: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .card-img {
     background-image: url(https://picsum.photos/300);
     background-repeat: no-repeat;
@@ -45,6 +65,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    filter: grayscale(90%)
 }
 .card-content {
     display: flex;
@@ -56,19 +77,33 @@ body {
 .card-content h2 {
     display: flex;
     justify-self: center;
-    width: 35%;
+    font-weight: 900;
+    padding: 0;
+    margin: -5px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 10px;
 }
 
 button {
     width: 60%;
-    height: 40px;
+    height: 35px;
     background-color: #05B2D2;
     border-style: none;
     border-radius: 3px;
     color: white;
 }
 
-#cass {
+/* #cass {
     width: 50%;
 }
 
+#idris {
+    width: 30%;
+} */
